@@ -1,0 +1,57 @@
+<head>
+   <script src="js/jquery-3.6.3.js"></script>
+   <script>
+     $(document).ready(function(){
+
+      
+     /* $("p").click(function(){
+        $(this).hide();       //click on p delete it
+      })*/
+
+     /* $("#bt1").click(function(){
+         $("p").hide();         //button click delete all p
+      })
+      $("#bt1").click(function(){
+         $("#a1").hide();      //specific p element delete using id use class use dot
+       }) */
+   
+
+
+   /* $("#a1").hover(function(){    ///hover effect
+      alert("hello");
+    },
+    function(){
+    alert("hi");
+    })
+  })*/
+
+
+
+
+ $("input").focus(function(){ 
+ $(this).css("background-color","pink");
+ })
+ $("input").blur(function(){
+ $(this).css("background-color","green");
+
+ })
+   
+ })
+
+
+
+
+
+
+      
+   </script>
+   </head>
+   <body>
+      <p>this is paragraph<p>
+         <p>this is page</p>
+         <p id="a1">hello world</p>
+         <p class="a2">i am aarti</p>
+         <button type="button" id="bt1" value="click">click</button>
+        name <input type="text" name="fullname">
+        email  <input type="text" name="email">
+      </body> 

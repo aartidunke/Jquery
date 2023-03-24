@@ -1,0 +1,32 @@
+<head>
+   
+    <script src="js/jquery-3.6.3.js"></script>
+    <script>
+
+     $(document).ready(function(){
+      
+         $.get("https://jsonplaceholder.typicode.com/todos",function(data,status){
+            $("#list").click(function(event){
+                var x=event.target.textContent(event);
+                if(x==1){
+
+                }
+                else if(x==2){
+                    
+                }
+         })
+        })
+     })
+        
+
+       
+    </script>
+    </head>
+    <body>
+       <ul id="list">
+        <li><a href="#">1</li>
+            <li><a href="#">2</li>
+                <li><a href="#">3</li>
+       </ul>
+        </body>
+    

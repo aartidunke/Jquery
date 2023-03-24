@@ -1,0 +1,64 @@
+<head>
+    <script src="js/jquery-3.6.3.js"></script>
+        <script>
+
+            $(document).ready(function() {   
+             //on method atttaches one or more event handlers for selected element...
+             // $("#s3").mouseenter(function(){
+             //   alert("hi");
+             //})
+           
+             // $("#a2").hover(function(){ 
+             //   alert("hello");
+            //},
+            //function(){
+             // alert("bye");
+           // })
+          
+           
+        // $("p").on("click",function(){
+          //  $(this).hide();
+        // })
+         
+        
+        $("p").on({     
+        mouseenter:function(){ 
+           $(this).css("background-color","lightgrey");
+        }, 
+        mouseleave:function(){ 
+           $(this).css("background-color","lightpink");
+        }, 
+        click:function(){ 
+           $(this).css("background-color","yellow");
+        },
+       })   
+     })
+
+
+    
+
+
+
+
+        
+
+        
+                
+            
+            
+                
+        
+
+
+            </script>
+            </head>
+            </head>
+            <body>
+                <p>hi pooja</p>
+                
+                <p id="a2">hello this is page</p>
+                <p id="s3">hello siidhi</p>
+
+                <p>hi i am aarti</p>
+               
+                </body>

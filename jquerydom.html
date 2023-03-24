@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#d2{
+			width:100px;
+			height:100px;
+			border:2px solid green;
+		}
+		.A{
+			background-color: red;
+		}
+		.B{
+			background-color: green;
+		}
+	</style>	
+<script src="js/jquery-3.6.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+			$("#btn1").click(function(){
+				/*var num1=$("#txtNum1").val();
+				var num2=$("#txtNum2").val();
+				var res=parseInt(num1)+parseInt(num2);
+				$("#txtRes").val(res);
+				$("#d1").html(res);
+				*/
+				var newBtn=$("<input type=button value=newBtn id='btn2'>");
+				var txtBox=$("<input><br>");
+				txtBox.attr({"type":"text",
+							  "placeholder":"textbox"});
+				$("#d1").append(txtBox);
+				//$("#d1").append(newBtn);
+				newBtn.appendTo($("#d1"));
+				$("#btn2").click(function(){
+				alert("new btn");
+			})
+			})
+			$("#btn3").click(function(){
+			/*	//var x=$("ul").remove();
+				
+				//var x=$("ul").empty();
+				$("body").append(x);*/
+
+				$("ul li:first").clone().appendTo($("ul"));
+			
+			})
+			/*var d1=document.getElementById("d1");
+			d1.innerHTML="Through script!!!";
+			//converting javascript obj to jQuery
+			$(d1).html("new value");*/
+
+			var d2=$("#d1");
+			d2.html("new value");
+			//converting jQuery oBj to javascript Obj
+			d2.get().innerHTML="jqueryObject";
+			//alert(d1===d2);//false
+		x=$("#d2");
+			$("#btn2").click(function(){
+				
+
+				if(x.hasClass("A")){
+					x.removeClass("A");
+					x.addClass("B");
+				}
+				else if(x.hasClass("B")){
+					x.removeClass("B");
+					x.addClass("A");
+				}
+			})
+		})
+	</script>
+	</head>
+	<body>
+		
+		<ul >
+			<li>Red</li>
+			<li>Yellow</li>
+			<li>Green</li>
+		</ul>
+	</div>
+<div id="d2" class="A"></div>
+		
+		<input type=button value="ClassDEmo" id="btn2">
+	</body>
+</html>

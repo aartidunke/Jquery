@@ -1,0 +1,39 @@
+<head>
+   
+    <script src="js/jquery-3.6.3.js"></script>
+    <script>
+    
+    $(document).ready(function(){
+        $("#bt1").click(function(){
+        $("#p1").text("hello");
+        });
+    })
+
+    $(document).ready(function(){
+        $("#bt2").click(function(){
+            $("#p2").html("<b>hello world</b>");
+        })
+    })
+
+    $(document).ready(function(){
+        $("#bt3").click(function(){
+            $("#t1").val("Doremon");
+        })
+    })
+    
+       
+    </script>
+    </head>
+    <body>
+      
+      <p id="p1">the paragraph </p>
+      <p id="p2">this is another paragraph</p>
+
+       Input field<input type="text" id="t1" value="mickey mouse">
+
+       <button id="bt1">set Text</button>
+       <button id="bt2">set Html</button>
+       <button id="bt3">set value</button>
+
+        </body>
+    

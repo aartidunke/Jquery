@@ -1,0 +1,28 @@
+<head>
+   
+    <script src="js/jquery-3.6.3.js"></script>
+    <script>
+
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#div1").fadeIn();
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn(3000);
+
+            });
+          
+        
+        });
+       
+    </script>
+    </head>
+    <body>
+        <button type="button">click fadein</button>
+        <div id="div1" style="background-color: red; width: 200px; height: 200px; display: none;"></div><br>
+        <div id="div2" style="background-color: green; width: 200px; height: 200px; display: none;"></div><br>
+        <div id="div3" style="background-color: gold; width: 200px; height: 200px; display: none;"></div><br>
+        <div style="background-color: blueviolet; width: 100px; height: 100px;"></div>
+        <p>hello</p>
+        <button type="button" id="bt1">animate</button>
+        </body>
+    

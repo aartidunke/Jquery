@@ -1,0 +1,32 @@
+<head>
+   
+    <script src="js/jquery-3.6.3.js"></script>
+    <script>
+    $(document).ready(function(){
+      /*$("a").click(function(){
+      $("a").attr("href","http://www.google.com");   ///attr:set and returns attributes and values of selected element.
+                                                        // returns attribute value it returns value from first match
+      $("a").attr({
+       "href":"http://www.google.com",
+       "title":"newtext"
+
+      });*/  
+      
+     $("#bt1").click(function(){
+      var newbtn=$("<input>");
+      newbtn.attr({"type":"button","value":"newbtn"});
+      $("body").append(newbtn);
+       newbtn.appendTo($("body"))
+     })
+    })
+   
+    </script>
+    </head>
+    <body>
+      <a href="#">google</a>
+      <input type="button" value="click" id="bt1">
+    
+      <div id="d1"></div>
+
+    </body>
+

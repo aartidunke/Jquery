@@ -1,0 +1,40 @@
+<head>
+   
+    <script src="js/jquery-3.6.3.js"></script>
+    <script>
+
+      $(document).ready(function(){
+        $("#a1").click(function(){
+          $("p").hide();
+        })
+      })
+      
+      $(document).ready(function(){
+        $("#a2").click(function(){
+          $("p").show(1000);
+          //  $("p").toggle(); use  one button in body tag
+        })
+      })
+      $(document).ready(function(){
+        $("#a3").click(function(){
+         alert("the paragraph is on deleted"); 
+        // $("#p1").hide(1000);
+        $("#p1").css("color","pink").slideUp(2000).slideDown(2000);
+        
+      })
+      })
+      
+       
+    </script>
+    </head>
+    <body>
+       <p>if you click on me</p>
+       
+       <button id="a1">Hide</button>
+       <button id="a2">Show</button>
+
+
+       <button id="a3">Hide1</button>
+       <p id="p1">hello i am sneha</p>
+       
+        </body>

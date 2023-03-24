@@ -1,0 +1,44 @@
+<head>
+    <script>
+        
+    let employee=[
+    {name:'Sonal',salary:6000,hireDate:'7 jan,2010'},
+    {name:'Aarti',salary:3000,hireDate:'2 december,2019'},
+    {name:'Megha',salary:1000,hireDate:'9 feb,2004'}
+];
+/*
+employee.sort(function(x,y){
+   return x.salary-y.salary;   ///sort salary only in table
+});
+console.table(employee); */ 
+
+/*
+employee.sort(function(x,y){
+let a=x.name.toUpperCase(),
+ b=y.name.toUpperCase();
+return a==b? 0 : a>b ? 1 :-1;  /// sort by name
+})
+
+console.table(employee); */
+
+/*                               only date acending decending
+employee.sort(function(x,y){
+  let a=new Date(x.hireDate),
+  b=new Date(y.hireDate);
+  return b-a;
+})
+
+console.table(employee); */
+
+        
+    
+
+        
+
+       
+    </script>
+    </head>
+    <body>
+       <button type="button" id="bt1">sort</button>
+        </body>
+    

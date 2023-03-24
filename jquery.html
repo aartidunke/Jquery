@@ -1,0 +1,38 @@
+<head>
+   
+    <script src="js/jquery-3.6.3.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            console.log("document ready!!!");
+        $("#btn1").click(function(){
+            var num1=$("#txtNum1").val();
+            var num2=$("#txtNum2").val();
+            var sum=parseInt(num1)+parseInt(num2);
+            $("#txtRes").val(sum);
+            var str="<br><b>Addition="+sum+"</b>";
+            $("#d1").html(str);
+            $("#d2").text(str);
+
+            //p css
+            //$("p").css("color","blue");
+            $("p").css({
+                    "background-color":"yellow",
+                    "color":"green"
+            });
+            var x=$("p").css("color");
+            alert(x);
+        })
+        })
+       
+    </script>
+    </head>
+    <body>
+        Num1:<input type=text id="txtNum1"><br>
+        Num2:<input type=text id="txtNum2"><br>
+        <input type=button value=click id=btn1>
+        Res:<input type=text id="txtRes"><br>
+        <div id=d1></div>
+        <div id=d2></div>
+        <p>This is p</p>
+        </body>

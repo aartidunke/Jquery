@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		img,div{
+			width:200px;
+			height:200px;
+			border:2px solid red;
+		}
+		.A{
+			background:linear-gradient(45deg,red,blue);
+		}
+	</style>
+	<script src="js/jquery-3.6.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			//using id
+			$("#btn1").click(function(){
+				//alert("its clicked!!!");
+
+				//using tag name
+				//$("div").css("background-color","lightblue");
+				/*$("div").css({
+					"background":"-webkit-linear-gradient(45deg,red,blue)",
+					"background":"-moz-linear-gradient(45deg,red,blue)",
+					"background":"linear-gradient(45deg,red,blue)",
+					"color":"red"
+					//"border":'10px solid blue'
+				});*/
+				//$("div").attr("class","A");
+				//using attributes
+				$("a[href='util.js']").css("color","green");
+				//$("a").attr("href","demo4.html");
+				$("a").attr({
+					'href':"demo4.html",
+					'title':"newValue"
+				});
+
+				/*$("div").html("<b>from the script!!!</b>");*/
+				$("div").text("<b>from the script!!!</b>");
+				
+			})
+        })
+	</script>
+	</head>
+	<body>
+		 <img src="pic2.jpg">
+		 <div >This is div</div>
+		 <div >Thsi is div2</div>
+		 <a href="util.js">Link1</a>
+		 <a href="">link2</a>
+		 <input type=button value="click" id="btn1">
+	</body>
+</html>
